@@ -10,7 +10,7 @@ Calendar, designated by its CalendarId, and a third party MySQL Database.
 ##Usage
 
 
-- Use the templates provided in the ![MySQL Table Templates](https://github.com/vonSchmidt/GoogleCalendarSync/tree/master/MySQL_Table_Templates)
+- Use the templates provided in the [MySQL Table Templates](https://github.com/vonSchmidt/GoogleCalendarSync/tree/master/MySQL_Table_Templates)
 directory to create the 3rd party database.
 - Change the CalendarId by setting the `cal_id` variable in the scripts.
 (This will most certainly change in the future)
@@ -20,7 +20,7 @@ correction of both events sources.
 ##Notes
 
 Consider using this service within a cron job like the one described here: 
-![CRON Example](https://github.com/vonSchmidt/GoogleCalendarSync/tree/master/cronsched)
+[CRON Example](https://github.com/vonSchmidt/GoogleCalendarSync/tree/master/cronsched)
 
 
 This script will store all authentication information in `$HOME/.credentials`.
