@@ -21,7 +21,8 @@ correction of both events sources.
 
 Consider using this service within a cron job like the one described here: 
 ![CRON Example](https://github.com/vonSchmidt/GoogleCalendarSync/tree/master/cronsched)
-----
+
+
 This script will store all authentication information in `$HOME/.credentials`.
 
 ##License
