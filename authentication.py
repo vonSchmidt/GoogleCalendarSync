@@ -10,6 +10,14 @@ from oauth2client import client
 from oauth2client import tools
 
 
+try:
+    import argparse
+    parser = argparse.ArgumentParser(parents=[tools.argparser])
+    flags = parser.parse_args()
+except ImportError:
+    print "Package argparse is needed."
+    flags = None;
+
 SCOPES                  = 'https://www.googleapis.com/auth/calendar'
 CLIENT_SECRET_FILE      = 'client_secret.json'
 APPLICATION_NAME        = 'Calendar Sync'
