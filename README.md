@@ -32,8 +32,8 @@ This script will store all authentication information in `$HOME/.credentials`.
 
 
 The following Python modules are required:
-    - argparse
-    - python-mysqldb
+- argparse
+- python-mysqldb
 
 Create a database called `events` if you don't want to meddle with the
 configuration of the module, otherwise change the database connection
