@@ -65,7 +65,11 @@ def fetch(max_events=0, future=False, up_min=None):
         elif event['status'] == "confirmed":
             confirmed_events.append(event)
 
-    return confirmed_events, deleted_events, events[0]['updated']
+    if events:
+        last_update = events[0]['updated']
+    else:
+        last_update = ''
+    return confirmed_events, deleted_events, last_update
 
 
 
